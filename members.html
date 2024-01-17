@@ -27,40 +27,78 @@
     h1 {
       text-align: center;
       /* Center the "Our Members" heading */
-      font-size: 36px;
+      font-size: 50px;
       /* Increased header size */
+      text-shadow:
+        -1px -1px 0 white,
+        0 -1px 0 white,
+        1px -1px 0 white,
+        1px 0 0 white,
+        1px 1px 0 white,
+        0 1px 0 white,
+        -1px 1px 0 white,
+        -1px 0 0 white;
+      /* white outline on text */
     }
 
     ul {
-      font-size: 24px;
+      font-size: 40px;
       /* Increased text size */
       text-align: center;
       list-style: none;
       /* Removes bullet points */
       padding: 0;
       /* Remove default padding */
+      text-shadow:
+        -1px -1px 0 white,
+        0 -1px 0 white,
+        1px -1px 0 white,
+        1px 0 0 white,
+        1px 1px 0 white,
+        0 1px 0 white,
+        -1px 1px 0 white,
+        -1px 0 0 white;
+      /* white outline on text */
     }
 
     li {
       margin-bottom: 10px;
       /* Add margin between list items */
     }
+
+    .groupnames {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+    }
+
+    .grouppics {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      height: 1px;
+    }
   </style>
   <title>Group Website</title>
 </head>
 
 <body>
+  <p>&nbsp;</p>
+  <p></p>
   <nav>
     <a href="./index.html">Home</a>
     <a href="./members.html">Members</a>
     <a href="./goals.html">Goals</a>
   </nav>
   <h1>Our Members</h1>
-  <ul>
+  <ul class="groupnames">
     <li>Markos Magaoay</li>
     <li>Evan Lavoie</li>
     <li>Joaquin Juanico</li>
   </ul>
+  <div class="grouppics">
+    <img style="display: block; margin-left: auto; margin-right: auto;" src="markos.jpg" height="550">
+    <img style="display: block; margin-left: auto; margin-right: auto;" src="evan.jpg" height="550">
+    <img style="display: block; margin-left: auto; margin-right: auto;" src="joaquin.jpg" height="550">
+  </div>
 </body>
 
 </html>
